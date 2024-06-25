@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #1e1c1c;
+    --white-color: #f7f7f7;
+}
+
+nav {
+    background-color: black;
+    color: white;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        margin: 0 10px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        #nav-menu {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            background-color: black;
+            position: absolute;
+            top: 80px;
+            /* Height of the navbar */
+            left: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #nav-menu.show {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width:500px) {
+    .section1 {
+        background: url(./Assets/01_web/01_homepage/Homepage_background.png) center;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    .mobileImage {
+        display: none;
+    }
+}
+
+.section2 {
+    background: url(./Assets/01_web/02_AboutUs/AboutUs_background.png) center;
+    background-size: cover;
+    min-height: 100vh;
+
+    @media screen and (max-width:850px) {
+        .eightFifty {
+            flex-direction: column;
+        }
+    }
+}
+
+.section3 {
+    background: url(./Assets/01_web/ourServices/Our\ Services_background.png) center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.section4 {
+    background: url(./Assets/01_web/04_Roadmap/Roadmap_background.png) center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.contact {
+    background: url(./Assets/01_web/05_Contactus/Contact_us_background.png) center;
+    background-size: cover;
+    min-height: 70vh;
+}
