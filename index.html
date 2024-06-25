@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,145 +15,162 @@
 
 <body>
 
-    <div class="bg-black">
-        <nav class="flex justify-between items-center bg-black text-white h-20 max-w-[80rem] px-10 m-auto">
-            <img src="./Assets/01_web/01_homepage/Logo.png" class="h-14" alt="Logo">
-            <i class="fa-solid fa-bars md:hidden text-[#009ee3] text-2xl cursor-pointer" id="menu-toggle"></i>
-            <ul class="hidden md:flex justify-center items-center gap-6" id="nav-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Our Services</a></li>
-                <li><a href="">RoadMap</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="h-1 w-full bg-[#12f0c3]"></div>
+    <div id="container" data-scroll-container>
 
-    <!-- ===========section1 -->
-
-    <div class="section1 bg-[#060a33]">
-        <div class="flex min-h-[90vh] sm:px-10 flex-col justify-center sm:items-end" id="finishPadding">
-            <img src="./Assets/02-mobil/01_homepage/Homepage_background.png" class="mobileImage pb-5" alt="">
-            <div class="md:w-[35%] px-10 pb-10">
-                <h1 class="text-[#009ee3] text-4xl font-bold">Auronius </h1>
-                <p class="text-white pt-2 max-w-[20rem]">Experience the thrill of uncovering the rarity of digital
-                    collectibles post-acquisition, akin to a mystery box model, and exchange digital for physical
-                    whenever you want.
-                </p>
-            </div>
+        <div class="bg-black">
+            <nav class="flex justify-between items-center bg-black text-white h-20 max-w-[80rem] px-10 m-auto">
+                <img src="./Assets/01_web/01_homepage/Logo.png" class="h-14" alt="Logo">
+                <i class="fa-solid fa-bars md:hidden text-[#009ee3] text-2xl cursor-pointer" id="menu-toggle"></i>
+                <ul class="hidden md:flex justify-center items-center gap-6" id="nav-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">RoadMap</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="h-1 w-full bg-[#12f0c3]"></div>
+        <div class="h-1 w-full bg-[#12f0c3]"></div>
 
-    <!-- section2=============== -->
+        <!-- ===========section1 -->
 
-    <div class="section2">
-        <div class=" max-w-[80rem] m-auto px-10 py-16">
-            <div class="flex justify-between items-center min-h-[100vh] eightFifty ">
-                <div class="">
-                    <h2 class="text-[#009ee3] text-4xl font-bold">About US</h2>
-                    <p class="text-white pt-3">Auronius is a tech company and disruptor in the collectibles market
-                        aiming to
-                        provide a platform that
-                        delivers value to both creators and collectors. Starting our journey with a focus on the comic
-                        book
-                        industry, we have fostered partnerships with esteemed artists, some of whom have worked with
-                        industry giants like Marvel and DC. We sell these artists' exceptional works and collaborate
-                        with
-                        them and other talented creators to generate exclusive content for our platform. <br><br>
-                        We are not just a company; we are a platform for creators to shine and for fans to get closer
-                        than
-                        ever to their favorite artists and heroes they create. We're starting with the comic books, with
-                        plans to expand to a wider array of collectibles. Our vision? To transform the way collectibles
-                        are
-                        bought, sold, and cherished.
-                    </p>
-                </div>
-                <img class="lg:h-[33rem] md:h-[25rem]" src="./Assets/01_web/02_AboutUs/about us_comics.png"
-                    alt="us_comics">
-            </div>
-        </div>
-    </div>
-    <div class="h-1 w-full bg-[#12f0c3]"></div>
-
-    <!-- ================ Servicers -->
-
-    <div class="section3">
-        <div class="max-w-[80rem] min-h-[100vh] flex flex-col justify-center items-center m-auto px-10 py-16">
-            <div class="text-[#009ee3] text-center text-4xl font-bold">Our Services</div>
-            <p class="text-white text-center pt-1">Auronius builds three key services</p>
-            <div class="flex justify-center items-center max-w-[65rem] gap-5 m-auto  flex-wrap pt-12">
-                <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
-                    <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
-                    <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Mystery-based Digital Collectibles</h2>
-                    <p class="text-white ">Enjoy the thrill of acquiring limited-edition digital collectibles without
-                        knowing their rarity until post-purchase</p>
-                </div>
-                <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
-                    <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
-                    <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Physical Redemption</h2>
-                    <p class="text-white ">Experience our unique digital-to-physical conversion system that allows
-                        collectors to claim physical versions of their digital treasures</p>
-                </div>
-                <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
-                    <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
-                    <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Vibrant Online Marketplace</h2>
-                    <p class="text-white ">Engage with creators and collectors from around the world on our exchange
-                        market
+        <div class="section1 bg-[#060a33]">
+            <div class="flex min-h-[90vh] sm:px-10 flex-col justify-center sm:items-end" id="finishPadding">
+                <img src="./Assets/02-mobil/01_homepage/Homepage_background.png" class="mobileImage pb-5" alt="">
+                <div class="md:w-[35%] px-10 pb-10">
+                    <h1 class="text-[#009ee3] text-4xl font-bold">Auronius </h1>
+                    <p class="text-white pt-2 max-w-[20rem]">Experience the thrill of uncovering the rarity of digital
+                        collectibles post-acquisition, akin to a mystery box model, and exchange digital for physical
+                        whenever you want.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="h-1 w-full bg-[#12f0c3]"></div>
+        <div class="h-1 w-full bg-[#12f0c3]"></div>
 
-    <!-- ============RoadMap -->
-    <div class="section4">
-        <div class=" max-w-[80rem] min-h-[100vh] md:flex justify-between items-center gap-2 m-auto px-10 py-16 ">
-            <div class="text-white max-w-[30rem]">
-                <h2 class="text-[#009ee3]  text-4xl font-bold">RoadMap</h2>
-                <p class="py-3 pb-6">Currently, we are at an exciting stage of building our Minimum Viable Product
-                    (MVP).</p>
-                <h3 class="text-[#009ee3] text-2xl font-semibold">Phase1: MVP </h3>
-                <p>[Q3 2024] <br> our model demonstrated by the first comic books</p>
-                <h3 class="text-[#009ee3] text-2xl font-semibold pt-4">Phase2: Scaling Up</h3>
-                <p>[Q4 2024]<br>onboarding more authors and publishers so we have more to offer
-                </p>
-                <h3 class="text-[#009ee3] text-2xl font-semibold pt-4">Phase3: Expanding</h3>
-                <p>[2025]<br>more types of collectibles
-                </p>
-            </div>
-            <img src="./Assets/01_web/04_Roadmap/Roadmap_obrazek.png" class="lg:h-[25rem] md:h-[20rem] pt-5 md:pt-0 "
-                alt="">
-        </div>
-    </div>
-    <div class="h-1 w-full bg-[#12f0c3]"></div>
+        <!-- section2=============== -->
 
-    <!-- ==========contact -->
-
-    <div class="contact">
-        <div class="max-w-[80rem] m-auto px-10 py-16">
-            <div class="text-[#009ee3] text-center text-4xl font-bold">Contact Us</div>
-            <p class="text-white max-w-[30rem] m-auto text-center pt-1">Connect with one of our founders to learn more
-                about the transformative venture Auronius is embarking on.</p>
-            <div class="flex justify-center flex-wrap items-center gap-10 pt-10">
-                <div class="text-center">
-                    <img src="./Assets/01_web/05_Contactus/Contact_us_profil_Martin.png" alt="">
-                    <h2 class="text-[#009ee3] text-2xl font-semibold pt-3">Martin Kopernicky</h2>
-                    <a href="" class="text-white decoration-none">martin@auronius.com</a>
-                </div>
-                <div class="text-center">
-                    <img src="./Assets/01_web/05_Contactus/Contact_us_profil_jan.png" alt="">
-                    <h2 class="text-[#009ee3] text-2xl font-semibold pt-3">Jan Lochman</h2>
-                    <a href="" class="text-white decoration-none">john@auronius.com</a>
+        <div class="section2">
+            <div class=" max-w-[80rem] m-auto px-10 py-16">
+                <div class="flex justify-between items-center min-h-[100vh] eightFifty ">
+                    <div class="">
+                        <h2 class="text-[#009ee3] text-4xl font-bold">About US</h2>
+                        <p class="text-white pt-3">Auronius is a tech company and disruptor in the collectibles market
+                            aiming to
+                            provide a platform that
+                            delivers value to both creators and collectors. Starting our journey with a focus on the
+                            comic
+                            book
+                            industry, we have fostered partnerships with esteemed artists, some of whom have worked with
+                            industry giants like Marvel and DC. We sell these artists' exceptional works and collaborate
+                            with
+                            them and other talented creators to generate exclusive content for our platform. <br><br>
+                            We are not just a company; we are a platform for creators to shine and for fans to get
+                            closer
+                            than
+                            ever to their favorite artists and heroes they create. We're starting with the comic books,
+                            with
+                            plans to expand to a wider array of collectibles. Our vision? To transform the way
+                            collectibles
+                            are
+                            bought, sold, and cherished.
+                        </p>
+                    </div>
+                    <img class="lg:h-[33rem] md:h-[25rem]" src="./Assets/01_web/02_AboutUs/about us_comics.png"
+                        alt="us_comics">
                 </div>
             </div>
         </div>
+        <div class="h-1 w-full bg-[#12f0c3]"></div>
 
+        <!-- ================ Servicers -->
+
+        <div class="section3">
+            <div class="max-w-[80rem] min-h-[100vh] flex flex-col justify-center items-center m-auto px-10 py-16">
+                <div class="text-[#009ee3] text-center text-4xl font-bold">Our Services</div>
+                <p class="text-white text-center pt-1">Auronius builds three key services</p>
+                <div class="flex justify-center items-center max-w-[65rem] gap-5 m-auto  flex-wrap pt-12">
+                    <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
+                        <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
+                        <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Mystery-based Digital Collectibles</h2>
+                        <p class="text-white ">Enjoy the thrill of acquiring limited-edition digital collectibles
+                            without
+                            knowing their rarity until post-purchase</p>
+                    </div>
+                    <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
+                        <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
+                        <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Physical Redemption</h2>
+                        <p class="text-white ">Experience our unique digital-to-physical conversion system that allows
+                            collectors to claim physical versions of their digital treasures</p>
+                    </div>
+                    <div class="bg-[#302164] min-h-[23.5rem] px-5 pb-5 max-w-[20rem] rounded-3xl">
+                        <img src="./Assets/01_web/ourServices/Our Services_01.png" class="h-[10rem] mb-5 m-auto" alt="">
+                        <h2 class="text-[#009ee3] text-2xl pb-3 font-semibold">Vibrant Online Marketplace</h2>
+                        <p class="text-white ">Engage with creators and collectors from around the world on our exchange
+                            market
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-1 w-full bg-[#12f0c3]"></div>
+
+        <!-- ============RoadMap -->
+        <div class="section4">
+            <div class=" max-w-[80rem] min-h-[100vh] md:flex justify-between items-center gap-2 m-auto px-10 py-16 ">
+                <div class="text-white max-w-[30rem]">
+                    <h2 class="text-[#009ee3]  text-4xl font-bold">RoadMap</h2>
+                    <p class="py-3 pb-6">Currently, we are at an exciting stage of building our Minimum Viable Product
+                        (MVP).</p>
+                    <h3 class="text-[#009ee3] text-2xl font-semibold">Phase1: MVP </h3>
+                    <p>[Q3 2024] <br> our model demonstrated by the first comic books</p>
+                    <h3 class="text-[#009ee3] text-2xl font-semibold pt-4">Phase2: Scaling Up</h3>
+                    <p>[Q4 2024]<br>onboarding more authors and publishers so we have more to offer
+                    </p>
+                    <h3 class="text-[#009ee3] text-2xl font-semibold pt-4">Phase3: Expanding</h3>
+                    <p>[2025]<br>more types of collectibles
+                    </p>
+                </div>
+                <img src="./Assets/01_web/04_Roadmap/Roadmap_obrazek.png"
+                    class="lg:h-[25rem] md:h-[20rem] pt-5 md:pt-0 " alt="">
+            </div>
+        </div>
+        <div class="h-1 w-full bg-[#12f0c3]"></div>
+
+        <!-- ==========contact -->
+
+        <div class="contact">
+            <div class="max-w-[80rem] m-auto px-10 py-16">
+                <div class="text-[#009ee3] text-center text-4xl font-bold">Contact Us</div>
+                <p class="text-white max-w-[30rem] m-auto text-center pt-1">Connect with one of our founders to learn
+                    more
+                    about the transformative venture Auronius is embarking on.</p>
+                <div class="flex justify-center flex-wrap items-center gap-10 pt-10">
+                    <div class="text-center">
+                        <img src="./Assets/01_web/05_Contactus/Contact_us_profil_Martin.png" alt="">
+                        <h2 class="text-[#009ee3] text-2xl font-semibold pt-3">Martin Kopernicky</h2>
+                        <a href="" class="text-white decoration-none">martin@auronius.com</a>
+                    </div>
+                    <div class="text-center">
+                        <img src="./Assets/01_web/05_Contactus/Contact_us_profil_jan.png" alt="">
+                        <h2 class="text-[#009ee3] text-2xl font-semibold pt-3">Jan Lochman</h2>
+                        <a href="" class="text-white decoration-none">john@auronius.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script>
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+    });
+
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const menuToggle = document.getElementById('menu-toggle');
